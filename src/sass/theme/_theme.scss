@@ -66,6 +66,8 @@ nav {
     z-index: 100;
     box-shadow: 2px 2px 1px $dark-green ;
     height: 50px;
+    position: absolute;
+    top: 0;
 }
 
 .menu-links {
@@ -255,8 +257,6 @@ nav {
 
 
 @media (max-width: 768px) { 
-
-
     .menu-links { 
         justify-content: space-around;
     }
@@ -265,6 +265,7 @@ nav {
         width: 65vw;
         position: relative;
         margin:  20px auto;
+        z-index: -1;
     }
 
     .dlinq-title{

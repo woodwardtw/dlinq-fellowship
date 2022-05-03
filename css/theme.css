@@ -17153,6 +17153,8 @@ nav {
   z-index: 100;
   box-shadow: 2px 2px 1px #1a8574;
   height: 50px;
+  position: absolute;
+  top: 0;
 }
 
 .menu-links {
@@ -17348,6 +17350,7 @@ nav {
     width: 65vw;
     position: relative;
     margin: 20px auto;
+    z-index: -1;
   }
 
   .dlinq-title {
