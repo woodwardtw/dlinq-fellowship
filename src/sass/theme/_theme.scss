@@ -1,13 +1,14 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
  @font-face { 
     font-family: Ostrich Sans; 
-    src: url('https://experiments.middcreate.net/extras/fonts/OstrichSans-Medium.otf'); 
+    src: url('../fonts/OstrichSans-Medium.otf'); 
  } 
 
 
 h1, h2, h3, h4, h5 {
     font-family: 'Ostrich Sans', sans-serif;
     color:  $dark-blue;
+    font-weight: 800;
 }
 
 h2 {
@@ -44,13 +45,18 @@ body {
     padding: 0;
 }
 
+#wrapper-navbar {
+     position: fixed;
+     width: 100%;
+}
+
 nav {
-    position: fixed;
     background-color: #fff;
     width: 100%;
     margin: 0;   
     z-index: 100;
     box-shadow: 2px 2px 1px $dark-green ;
+    height: 50px;
 }
 
 .menu-links {
@@ -99,20 +105,22 @@ nav {
 
 .dlinq-title{
     line-height: 1;
-    font-size:  5vw;
+    font-size:  4.5vw;
     margin:  0 auto;
     text-align: center;
 }
 
 .fellows-title {
     display: block;
-    font-size: 13vw;
+    font-size: 11vw;
+    font-weight: 800;
 }
 
 .dig-title {
     display: block;
-    font-size: 16vw;
+    font-size: 14vw;
     line-height: .8;
+    font-weight: 800;
 }
 
 .main-body {

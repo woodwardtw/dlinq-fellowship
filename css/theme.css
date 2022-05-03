@@ -17089,11 +17089,12 @@ figure.woocommerce-product-gallery__wrapper {
 
 @font-face {
   font-family: Ostrich Sans;
-  src: url("https://experiments.middcreate.net/extras/fonts/OstrichSans-Medium.otf");
+  src: url("../fonts/OstrichSans-Medium.otf");
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Ostrich Sans", sans-serif;
   color: #0d395f;
+  font-weight: 800;
 }
 
 h2, .h2 {
@@ -17131,13 +17132,18 @@ body {
   padding: 0;
 }
 
-nav {
+#wrapper-navbar {
   position: fixed;
+  width: 100%;
+}
+
+nav {
   background-color: #fff;
   width: 100%;
   margin: 0;
   z-index: 100;
   box-shadow: 2px 2px 1px #1a8574;
+  height: 50px;
 }
 
 .menu-links {
@@ -17187,20 +17193,22 @@ nav {
 
 .dlinq-title {
   line-height: 1;
-  font-size: 5vw;
+  font-size: 4.5vw;
   margin: 0 auto;
   text-align: center;
 }
 
 .fellows-title {
   display: block;
-  font-size: 13vw;
+  font-size: 11vw;
+  font-weight: 800;
 }
 
 .dig-title {
   display: block;
-  font-size: 16vw;
+  font-size: 14vw;
   line-height: 0.8;
+  font-weight: 800;
 }
 
 .main-body {
