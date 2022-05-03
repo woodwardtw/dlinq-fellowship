@@ -4,18 +4,10 @@
     src: url('https://experiments.middcreate.net/extras/fonts/OstrichSans-Medium.otf'); 
  } 
 
-:root {
-    --darkest-blue:  #022543;
-    --dark-blue:  #0d395f;
-    --light-blue:  #e5f1fa;
-    --dark-green:  #1a8574;
-    --bright-green:  #20c997;
-}
-
 
 h1, h2, h3, h4, h5 {
     font-family: 'Ostrich Sans', sans-serif;
-    color:  var(--dark-blue);
+    color:  $dark-blue;
 }
 
 h2 {
@@ -36,15 +28,15 @@ p, li {
 }
 
 a {
-    color:  var(--dark-blue);
-    background-color: var(--light-blue);
+    color:  $dark-blue;
+    background-color: $light-blue;
     padding:  3px;
     transition: all .5s ease;
 }
 
 a:hover {
-/*    text-decoration-color:  var(--dark-green);
-*/    background-color: var(--bright-green);
+/*    text-decoration-color:  $dark-green;
+*/    background-color: $bright-green;
 }
 
 body {
@@ -58,7 +50,7 @@ nav {
     width: 100%;
     margin: 0;   
     z-index: 100;
-    box-shadow: 2px 2px 1px var(--dark-green) ;
+    box-shadow: 2px 2px 1px $dark-green ;
 }
 
 .menu-links {
@@ -70,7 +62,7 @@ nav {
 
 .menu-links  a {
     color:  #fff;
-    background-color: var(--dark-blue);
+    background-color: $dark-blue;
     margin:  0 10px;
     padding:  4px 10px;
     text-decoration: none;
@@ -86,19 +78,19 @@ nav {
 
 .title-block {
     margin:  10vh 20px 20px 20px;
-/*    border:  20px solid var(--dark-green);
+/*    border:  20px solid $dark-green;
    border-style: inset;*/ 
-     box-shadow: 1px 1px 0px var(--dark-green),
-                2px 2px 0px var(--dark-green),
-                3px 3px 0px var(--dark-green),
-                4px 4px 0px var(--dark-green),
-                5px 5px 0px var(--dark-green),
-                6px 6px 0px var(--dark-green),
-                7px 7px 0px var(--dark-green),
-                8px 8px 0px var(--dark-green),
-                9px 9px 0px var(--dark-green),
-                10px 10px 0px var(--dark-green),
-                11px 11px 0px var(--dark-green);
+     box-shadow: 1px 1px 0px $dark-green,
+                2px 2px 0px $dark-green,
+                3px 3px 0px $dark-green,
+                4px 4px 0px $dark-green,
+                5px 5px 0px $dark-green,
+                6px 6px 0px $dark-green,
+                7px 7px 0px $dark-green,
+                8px 8px 0px $dark-green,
+                9px 9px 0px $dark-green,
+                10px 10px 0px $dark-green,
+                11px 11px 0px $dark-green;
 
     padding:  20px;
     width:  30vw;
@@ -130,7 +122,7 @@ nav {
 }
 
 .emphasize {
-    background-color: var(--light-blue);
+    background-color: $light-blue;
     padding:  3px;
 }
 
@@ -138,7 +130,7 @@ nav {
     display: block;
     margin:  50px auto 100px auto;
     width:  300px;
-    background-color: var(--dark-blue);
+    background-color: $dark-blue;
     color:  #fff;
     font-size:  2.5rem;
     text-align: center;
@@ -154,7 +146,7 @@ nav {
 }
 
 .apply-btn:hover {
-    background-color: var(--dark-green);
+    background-color: $dark-green;
 }
 
 #intro {
@@ -175,18 +167,17 @@ nav {
 }
 
 #projects.highlight {
-    box-shadow: 1px 1px 0px var(--dark-green),
-                2px 2px 0px var(--dark-green),
-                3px 3px 0px var(--dark-green),
-                4px 4px 0px var(--dark-green),
-                5px 5px 0px var(--dark-green),
-                6px 6px 0px var(--dark-green),
-                7px 7px 0px var(--dark-green),
-                8px 8px 0px var(--dark-green),
-                9px 9px 0px var(--dark-green),
-                10px 10px 0px var(--dark-green),
-                11px 11px 0px var(--dark-green);
-    background-color: ;                
+    box-shadow: 1px 1px 0px $dark-green,
+                2px 2px 0px $dark-green,
+                3px 3px 0px $dark-green,
+                4px 4px 0px $dark-green,
+                5px 5px 0px $dark-green,
+                6px 6px 0px $dark-green,
+                7px 7px 0px $dark-green,
+                8px 8px 0px $dark-green,
+                9px 9px 0px $dark-green,
+                10px 10px 0px $dark-green,
+                11px 11px 0px $dark-green;
 
 }
 
@@ -204,12 +195,12 @@ nav {
     flex-flow: row wrap;  
     justify-content: space-between;
     padding: 10px 5px 10px 5px;
-    border-bottom: 1px solid var(--dark-green);
+    border-bottom: 1px solid $dark-green;
     transition: all .5s ease;
 }
 
 .event-block:hover {
-    background-color: var(--light-blue);
+    background-color: $light-blue;
 }
 
 .date, .date-detail {
@@ -217,7 +208,7 @@ nav {
 }
 
 .alert {
-    border: 1px solid var(--dark-green);
+    border: 1px solid $dark-green;
     padding: 15px;
     font-size:  1.5rem;
     border-radius: 12px;
@@ -230,7 +221,7 @@ nav {
 }
 
 [data-aos="border-left"].aos-animate {
-  border-left: 10px solid var(--light-blue);
+  border-left: 10px solid $light-blue;
   padding-left: 20px;
 }
 
