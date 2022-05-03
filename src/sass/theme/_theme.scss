@@ -1,0 +1,301 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+ @font-face { 
+    font-family: Ostrich Sans; 
+    src: url('https://experiments.middcreate.net/extras/fonts/OstrichSans-Medium.otf'); 
+ } 
+
+:root {
+    --darkest-blue:  #022543;
+    --dark-blue:  #0d395f;
+    --light-blue:  #e5f1fa;
+    --dark-green:  #1a8574;
+    --bright-green:  #20c997;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Ostrich Sans', sans-serif;
+    color:  var(--dark-blue);
+}
+
+h2 {
+    line-height: 1;
+    font-size:  5vw;
+    margin:  0 auto;
+}
+
+h3 {
+    line-height: 1;
+    font-size:  4vw;
+    margin:  100px auto 0 auto;
+}
+
+p, li {
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+a {
+    color:  var(--dark-blue);
+    background-color: var(--light-blue);
+    padding:  3px;
+    transition: all .5s ease;
+}
+
+a:hover {
+/*    text-decoration-color:  var(--dark-green);
+*/    background-color: var(--bright-green);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    margin: 0;   
+    z-index: 100;
+    box-shadow: 2px 2px 1px var(--dark-green) ;
+}
+
+.menu-links {
+    padding:  10px 20px;
+    display: flex;
+    flex-flow: row wrap;  
+    justify-content: right;
+}
+
+.menu-links  a {
+    color:  #fff;
+    background-color: var(--dark-blue);
+    margin:  0 10px;
+    padding:  4px 10px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.container {
+    display: flex;  
+    flex-flow: row wrap;  
+    justify-content: space-between;
+    margin-bottom:  150px;
+}
+
+.title-block {
+    margin:  10vh 20px 20px 20px;
+/*    border:  20px solid var(--dark-green);
+   border-style: inset;*/ 
+     box-shadow: 1px 1px 0px var(--dark-green),
+                2px 2px 0px var(--dark-green),
+                3px 3px 0px var(--dark-green),
+                4px 4px 0px var(--dark-green),
+                5px 5px 0px var(--dark-green),
+                6px 6px 0px var(--dark-green),
+                7px 7px 0px var(--dark-green),
+                8px 8px 0px var(--dark-green),
+                9px 9px 0px var(--dark-green),
+                10px 10px 0px var(--dark-green),
+                11px 11px 0px var(--dark-green);
+
+    padding:  20px;
+    width:  30vw;
+    position: fixed;
+}
+
+.dlinq-title{
+    line-height: 1;
+    font-size:  5vw;
+    margin:  0 auto;
+    text-align: center;
+}
+
+.fellows-title {
+    display: block;
+    font-size: 13vw;
+}
+
+.dig-title {
+    display: block;
+    font-size: 16vw;
+    line-height: .8;
+}
+
+.main-body {
+    width: 50vw;
+    padding:  30px 60px 0 30px;
+    margin-left: 40vw;
+}
+
+.emphasize {
+    background-color: var(--light-blue);
+    padding:  3px;
+}
+
+.apply-btn {
+    display: block;
+    margin:  50px auto 100px auto;
+    width:  300px;
+    background-color: var(--dark-blue);
+    color:  #fff;
+    font-size:  2.5rem;
+    text-align: center;
+    padding:  15px 10px 10px 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Ostrich Sans', sans-serif;
+    transition: all .4s ease;
+   /* background-image: url(../imgs/form.svg);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: 250px center;*/
+}
+
+.apply-btn:hover {
+    background-color: var(--dark-green);
+}
+
+#intro {
+    margin-top:  50px;
+}
+
+#projects {
+    background-color: #efefef;
+    padding:  10px 50px 50px 50px;
+    transition: all .8s ease;   
+    position: relative;
+    overflow: hidden;
+}
+
+
+#details {
+    margin-top:  100px;
+}
+
+#projects.highlight {
+    box-shadow: 1px 1px 0px var(--dark-green),
+                2px 2px 0px var(--dark-green),
+                3px 3px 0px var(--dark-green),
+                4px 4px 0px var(--dark-green),
+                5px 5px 0px var(--dark-green),
+                6px 6px 0px var(--dark-green),
+                7px 7px 0px var(--dark-green),
+                8px 8px 0px var(--dark-green),
+                9px 9px 0px var(--dark-green),
+                10px 10px 0px var(--dark-green),
+                11px 11px 0px var(--dark-green);
+    background-color: ;                
+
+}
+
+.events {
+    display: flex;
+    flex-flow: row wrap;  
+    justify-content: space-between;
+    font-size: 1.3rem;
+    margin-bottom: 100px;
+}
+
+.event-block {
+    width:  90%;
+    display: flex;
+    flex-flow: row wrap;  
+    justify-content: space-between;
+    padding: 10px 5px 10px 5px;
+    border-bottom: 1px solid var(--dark-green);
+    transition: all .5s ease;
+}
+
+.event-block:hover {
+    background-color: var(--light-blue);
+}
+
+.date, .date-detail {
+    width: 40%;    
+}
+
+.alert {
+    border: 1px solid var(--dark-green);
+    padding: 15px;
+    font-size:  1.5rem;
+    border-radius: 12px;
+}
+
+
+[data-aos="border-left"] {
+  border-left: 0;
+  transition-property: all;
+}
+
+[data-aos="border-left"].aos-animate {
+  border-left: 10px solid var(--light-blue);
+  padding-left: 20px;
+}
+
+[data-aos="sticky"] {
+  transition-property: all;
+}
+
+[data-aos="sticky"].aos-animate {
+  position: absolute;
+  top:  0;
+  right: 0;
+}
+
+
+
+
+
+@media (max-width: 768px) { 
+
+
+    .menu-links { 
+        justify-content: space-around;
+    }
+
+    .title-block {
+        width: 65vw;
+        position: relative;
+        margin:  20px auto;
+    }
+
+    .dlinq-title{
+        font-size:  10vw;
+    }
+
+    .fellows-title {
+        font-size: 26vw;
+    }
+
+    .dig-title {
+        font-size: 32vw;
+    }
+
+    h2 {
+        font-size:  15vw;
+    }
+
+    h3 {
+        font-size: 11vw;
+    }
+
+    .main-body {
+        width: 90vw;
+        padding:  30px 0;
+        margin-left: 5vw;
+    }
+
+    p, li {
+        font-size: 1.5rem;
+    }
+
+    #projects {
+        padding: 10px 20px 50px 20px;
+    }
+
+    #projects::before {
+        display: none;
+    }
+}
