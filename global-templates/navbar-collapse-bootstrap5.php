@@ -14,7 +14,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <nav>
     		<div class="menu-links">
 	    		<a href="https://dlinq.middcreate.net">DLINQ</a>
-	    		<a href="mailt:dlinq@middcreate.net">Contact Us</a>
+	    		<a href="mailto:dlinq@middcreate.net?subject=Digital%20Teaching%20and%20Learning%20Fellowship">Contact Us</a>
 	    		<a href="#apply">Apply</a>
 	    	</div>
 </nav>
