@@ -40,7 +40,7 @@ li {
 a {
     color:  $dark-blue;
     background-color: $light-blue;
-    padding:  3px;
+    padding: 0 3px;
     transition: all .5s ease;
 }
 
@@ -254,6 +254,24 @@ nav {
 
 .entry-title {
 	display: none;
+}
+
+#gform_wrapper_1{
+    border: 1px solid $dark-green;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 90px auto;
+    box-shadow: 1px 1px 0px $dark-green,
+                2px 2px 0px $dark-green,
+                3px 3px 0px $dark-green,
+                4px 4px 0px $dark-green,
+                5px 5px 0px $dark-green,
+                6px 6px 0px $dark-green,
+                7px 7px 0px $dark-green,
+                8px 8px 0px $dark-green,
+                9px 9px 0px $dark-green,
+                10px 10px 0px $dark-green,
+                11px 11px 0px $dark-green;
 }
 
 #gform_submit_button_1, #gform_save_1_footer_link {
