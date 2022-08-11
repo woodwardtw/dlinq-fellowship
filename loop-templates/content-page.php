@@ -20,11 +20,18 @@ defined( 'ABSPATH' ) || exit;
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
-
-		<?php
-		the_content();
-		understrap_link_pages();
-		?>
+		<div class="title-block">
+			<h1 class="dlinq-title">
+				<span class="dig-title">Digital</span>
+				Teaching &amp; Learning<span class="fellows-title">Fellows</span>
+			</h1>
+		</div>
+		<div class="main-body">
+			<?php
+			the_content();
+			understrap_link_pages();
+			?>
+		</div>
 
 	</div><!-- .entry-content -->
 

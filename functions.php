@@ -43,12 +43,3 @@ if ( class_exists( 'Jetpack' ) ) {
 foreach ( $understrap_includes as $file ) {
 	require_once get_theme_file_path( $understrap_inc_dir . $file );
 }
-
-
-add_filter( 'the_content', 'dlinq_fellowship_logo', 1 );
-
-function dlinq_fellowship_logo($content){
-	$logo = '<div class="title-block"><h1 class="dlinq-title"><span class="dig-title">Digital</span>Teaching &amp; Learning<span class="fellows-title">Fellows</span></h1></div><div class="main-body">
-';
-return $logo . $content . "</div>";
-}
