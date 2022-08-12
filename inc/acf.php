@@ -21,25 +21,47 @@ function dlinq_fellows_lister(){
             $clean_name = sanitize_title($name);
             $title = get_sub_field('title');
             $image = get_sub_field('image');
+            $image_url = $image['sizes']['medium'];
+            
             $focus = get_sub_field('project_focus');
+            $focus_prompt = get_sub_field_object('project_focus')['label'];
+
             $theme = get_sub_field('project_theme');
+            $theme_prompt = get_sub_field_object('project_theme')['label'];
+
             $impact = get_sub_field('project_impact');
+            $impact_prompt = get_sub_field_object('project_impact')['label'];
+
             // Do something...
             $fellow_index .= "
-                <div class='fellow-link'><a href='#{$clean_name}'>{$name}</a></div>
+                <li class='fellow-link'><a href='#{$clean_name}'>{$name}</a></li>
             ";
             $html .= "
                 <div class='fellow' id='{$clean_name}'>
-                    <h2>{$name}</h2>
-                    <div class='fellow-title'>{$title}</div>
-                    <div class=''>{$focus}</div>
-                    <div class=''>{$theme}</div>
-                    <div class=''>{$impact}</div>
+                    <div class='fellow-img'>
+                        <img src='{$image_url}' alt='Bio picture for {$name}.'>
+                        <h2>{$name}</h2>
+                        <div class='fellow-title'>{$title}</div>
+                    </div>
+                    <div class='fellow-text'>                        
+                        <div class=''>
+                            <h3>{$focus_prompt}</h3>
+                            {$focus}
+                        </div>
+                        <div class=''>
+                            <h3>{$theme_prompt}</h3>
+                            {$theme}
+                        </div>
+                        <div class=''>
+                            <h3>{$impact_prompt}</h3>                        
+                            {$impact}
+                        </div>
+                    </div>
                 </div>
             ";
         // End loop.
         endwhile;
-        echo "<div class='fellow-index'>{$fellow_index}</div> {$html}";
+        echo "<div class='fellow-index'><ul>{$fellow_index}</ul></div><div class='fellow-box'>{$html}</div>";
         // No value.
         else :
             // Do something...

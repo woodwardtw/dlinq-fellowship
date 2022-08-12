@@ -324,6 +324,42 @@ nav {
 	margin-top: 25px
 }
 
+//fellow list
+
+.fellow-index {
+    margin: 50px auto;
+}
+
+.fellow-box {
+    margin-top: 120px;
+}
+
+
+.fellow {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 100px;
+}
+
+.fellow-image h2 {
+    font-size: clamp(2rem, 1.2vw, 1.5vw);
+    font-family: sans-serif;
+}
+
+.fellow-text h3 {
+    font-size: clamp(2rem, 1.2vw, 1.5vw);
+    font-family: sans-serif;
+}
+
+.fellow-img {
+    flex-basis:30%;
+    padding: 20px;
+}
+
+.fellow-text {
+    flex-basis: 70%;
+    padding: 20px;
+}
 
 
 @media (max-width: 768px) { 
