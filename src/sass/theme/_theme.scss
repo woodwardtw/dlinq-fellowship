@@ -74,6 +74,9 @@ nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-flow: row wrap;  
+    justify-content: right;
 }
 
 #fellows-menu li{
@@ -374,7 +377,10 @@ nav {
     .menu-links { 
         justify-content: space-around;
     }
-
+    #fellows-menu li {
+        margin: 0;
+        justify-content: space-around;
+    }
     .title-block {
         width: 65vw;
         position: relative;

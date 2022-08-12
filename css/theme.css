@@ -17161,6 +17161,15 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: right;
+  -ms-flex-pack: right;
+  justify-content: right;
 }
 
 #fellows-menu li {
@@ -17452,6 +17461,13 @@ nav {
 
 @media (max-width: 768px) {
   .menu-links {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  #fellows-menu li {
+    margin: 0;
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
