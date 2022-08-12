@@ -17,8 +17,6 @@ defined( 'ABSPATH' ) || exit;
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-
 	<div class="entry-content">
 		<div class="title-block">
 			<h1 class="dlinq-title">
@@ -26,7 +24,7 @@ defined( 'ABSPATH' ) || exit;
 				Teaching &amp; Learning<span class="fellows-title">Fellows</span>
 			</h1>
 		</div>
-		<div class="main-body">
+		<div id="read-me" class="main-body">
 			<?php
 			the_content();
 			understrap_link_pages();
