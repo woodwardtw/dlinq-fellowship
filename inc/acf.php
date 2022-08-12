@@ -44,18 +44,12 @@ function dlinq_fellows_lister(){
                         <div class='fellow-title'>{$title}</div>
                     </div>
                     <div class='fellow-text'>                        
-                        <div class=''>
-                            <h3>{$focus_prompt}</h3>
-                            {$focus}
-                        </div>
-                        <div class=''>
-                            <h3>{$theme_prompt}</h3>
-                            {$theme}
-                        </div>
-                        <div class=''>
-                            <h3>{$impact_prompt}</h3>                        
-                            {$impact}
-                        </div>
+                        <h3>{$focus_prompt}</h3>
+                        {$focus}
+                        <h3>{$theme_prompt}</h3>
+                        {$theme}
+                        <h3>{$impact_prompt}</h3>                        
+                        {$impact}
                     </div>
                 </div>
             ";

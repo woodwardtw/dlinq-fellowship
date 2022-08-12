@@ -17427,16 +17427,17 @@ nav {
   flex-flow: row wrap;
   margin-top: 100px;
   border-top: 3px solid #1a8574;
-  padding-top: 30px;
+  padding-top: 60px;
 }
 
 .fellow-text h3, .fellow-text .h3 {
   font-size: clamp(2rem, 1.2vw, 1.5vw);
   font-family: sans-serif;
+  margin: 30px 0 0 0;
 }
 
-.fellow-text p {
-  font-size: 1.5rem;
+.fellow-text h3:first-child, .fellow-text .h3:first-child {
+  margin-top: 0;
 }
 
 .fellow-img {
