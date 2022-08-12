@@ -28,6 +28,7 @@ defined( 'ABSPATH' ) || exit;
 			<?php the_title( '<h1 class="fellows-title">', '</h1>' ); ?>
 			<?php
 			the_content();
+			dlinq_fellows_lister();
 			understrap_link_pages();
 			?>
 		</div>
