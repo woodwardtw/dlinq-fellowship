@@ -17417,11 +17417,8 @@ nav {
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   margin-top: 100px;
-}
-
-.fellow-image h2, .fellow-image .h2 {
-  font-size: clamp(2rem, 1.2vw, 1.5vw);
-  font-family: sans-serif;
+  border-top: 3px solid #1a8574;
+  padding-top: 30px;
 }
 
 .fellow-text h3, .fellow-text .h3 {
@@ -17429,11 +17426,21 @@ nav {
   font-family: sans-serif;
 }
 
+.fellow-text p {
+  font-size: 1.5rem;
+}
+
 .fellow-img {
   -webkit-flex-basis: 30%;
   -ms-flex-preferred-size: 30%;
   flex-basis: 30%;
   padding: 20px;
+}
+
+.fellow-img h2, .fellow-img .h2 {
+  font-size: clamp(2rem, 1.2vw, 1.5vw);
+  font-family: sans-serif;
+  margin-top: 20px;
 }
 
 .fellow-text {
@@ -17493,6 +17500,12 @@ nav {
 
   #projects::before {
     display: none;
+  }
+
+  .fellow-img, .fellow-text {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
   }
 }
 
