@@ -17157,6 +17157,37 @@ nav {
   top: 0;
 }
 
+#fellows-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#fellows-menu li {
+  display: inline-block;
+  color: #fff;
+  background-color: #0d395f;
+  margin: 0 10px;
+  padding: 4px 10px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+
+#fellows-menu li:hover {
+  box-shadow: -5px 0px #1a8574;
+}
+
+#fellows-menu li a {
+  width: 100%;
+  height: auto;
+}
+
+#fellows-menu li a:hover {
+  color: #fff;
+}
+
 .menu-links {
   padding: 10px 20px;
   display: -webkit-flex;
