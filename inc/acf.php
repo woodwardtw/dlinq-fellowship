@@ -25,9 +25,16 @@ function dlinq_fellows_lister(){
             
             $focus = get_sub_field('project_focus');
             $focus_prompt = get_sub_field_object('project_focus')['label'];
-
-            $theme = get_sub_field('project_theme');
-            $theme_prompt = get_sub_field_object('project_theme')['label'];
+            
+            if(get_sub_field('project_theme')){
+                $theme = get_sub_field('project_theme');
+                $theme_prompt = get_sub_field_object('project_theme')['label'];
+                $theme_html = "
+                    <h3>{$theme_prompt}</h3>
+                        {$theme}
+                ";
+            }
+            
 
             $impact = get_sub_field('project_impact');
             $impact_prompt = get_sub_field_object('project_impact')['label'];
@@ -46,8 +53,7 @@ function dlinq_fellows_lister(){
                     <div class='fellow-text'>                        
                         <h3>{$focus_prompt}</h3>
                         {$focus}
-                        <h3>{$theme_prompt}</h3>
-                        {$theme}
+                        {$theme_prompt}
                         <h3>{$impact_prompt}</h3>                        
                         {$impact}
                     </div>
